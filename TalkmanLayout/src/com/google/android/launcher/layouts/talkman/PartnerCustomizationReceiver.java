@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.launcher.layouts.angler;
+package com.google.android.launcher.layouts.talkman;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

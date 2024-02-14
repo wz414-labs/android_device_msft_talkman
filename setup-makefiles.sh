@@ -21,8 +21,8 @@ set -e
 INITIAL_COPYRIGHT_YEAR=2015
 
 # Required!
-VENDOR=huawei
-DEVICE=angler
+VENDOR=msft
+DEVICE=talkman
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

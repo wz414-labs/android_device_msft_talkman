@@ -125,13 +125,13 @@
 # System files
 /vendor/bin/ATFWD-daemon                 u:object_r:atfwd_exec:s0
 /vendor/bin/cnd                          u:object_r:cnd_exec:s0
-/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service.angler      u:object_r:hal_dumpstate_default_exec:s0
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service.talkman      u:object_r:hal_dumpstate_default_exec:s0
 /vendor/bin/imscmservice                 u:object_r:ims_exec:s0
 /vendor/bin/imsdatadaemon                u:object_r:ims_exec:s0
 /vendor/bin/imsqmidaemon                 u:object_r:ims_exec:s0
 /vendor/bin/ims_rtp_daemon               u:object_r:ims_exec:s0
-/system/bin/init\.angler\.power\.sh      u:object_r:init-power-sh_exec:s0
-/system/bin/init\.angler\.qseecomd\.sh   u:object_r:init-angler-qseecomd-sh_exec:s0
+/system/bin/init\.talkman\.power\.sh      u:object_r:init-power-sh_exec:s0
+/system/bin/init\.talkman\.qseecomd\.sh   u:object_r:init-talkman-qseecomd-sh_exec:s0
 /system/bin/init\.qcom\.devstart\.sh     u:object_r:init-qcom-devstart-sh_exec:s0
 /system/bin/init\.qcom\.devwait\.sh      u:object_r:init-qcom-devwait-sh_exec:s0
 /system/bin/init\.mcfg\.sh               u:object_r:init-mcfg-sh_exec:s0
@@ -159,7 +159,7 @@
 /vendor/bin/InputEventFind               u:object_r:inputeventfind_exec:s0
 /vendor/bin/oem_qmi_server               u:object_r:oem_qmi_server_exec:s0
 /vendor/bin/qti                          u:object_r:qti_exec:s0
-/vendor/bin/sensortool\.angler           u:object_r:sensortool_exec:s0
+/vendor/bin/sensortool\.talkman           u:object_r:sensortool_exec:s0
 /vendor/bin/slim_daemon                  u:object_r:location_exec:s0
 
 # Data files

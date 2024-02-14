@@ -46,7 +46,7 @@ const int CPU_SENSORS[] = {8, 9, 10, 11, 14, 15, 16, 7};
 //qcom, limit-temp
 #define CPU_THROTTLING_THRESHOLD      60
 #define BATTERY_SHUTDOWN_THRESHOLD    60
-// device/huawei/angler/thermal-engine-angler.conf
+// device/msft/talkman/thermal-engine-talkman.conf
 #define SKIN_THROTTLING_THRESHOLD     41
 #define SKIN_SHUTDOWN_THRESHOLD       64
 #define VR_THROTTLED_BELOW_MIN        47
@@ -271,7 +271,7 @@ thermal_module_t HAL_MODULE_INFO_SYM = {
         .module_api_version = THERMAL_HARDWARE_MODULE_API_VERSION_0_1,
         .hal_api_version = HARDWARE_HAL_API_VERSION,
         .id = THERMAL_HARDWARE_MODULE_ID,
-        .name = "Angler Thermal HAL",
+        .name = "Talkman Thermal HAL",
         .author = "The Android Open Source Project",
         .methods = &thermal_module_methods,
     },

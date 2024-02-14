@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := angler/device-partial.mk
+LOCAL_STEM := talkman/device-partial.mk
 
-$(call inherit-product-if-exists, vendor/huawei/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/msft/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/qcom/$(LOCAL_STEM))

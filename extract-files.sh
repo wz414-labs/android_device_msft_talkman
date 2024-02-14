@@ -16,8 +16,8 @@
 # limitations under the License.
 #
 
-export VENDOR=huawei
-export DEVICE=angler
+export VENDOR=msft
+export DEVICE=talkman
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

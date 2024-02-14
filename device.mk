@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL angler devices, and
-# are also specific to angler devices
+# This file includes all definitions that apply to ALL talkman devices, and
+# are also specific to talkman devices
 #
 # Everything in this directory will become public
 
@@ -23,55 +23,55 @@
 TARGET_USES_CHINOOK_SENSORHUB := false
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.rc:root/init.angler.rc \
-    device/huawei/angler/init.angler.usb.rc:root/init.angler.usb.rc \
-    device/huawei/angler/fstab.angler:root/fstab.angler \
-    device/huawei/angler/ueventd.angler.rc:root/ueventd.angler.rc \
-    device/huawei/angler/init.recovery.angler.rc:root/init.recovery.angler.rc \
-    device/huawei/angler/init.angler.power.sh:system/bin/init.angler.power.sh \
-    device/huawei/angler/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
-    device/huawei/angler/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
-    device/huawei/angler/init.qcom.devwait.sh:system/bin/init.qcom.devwait.sh \
-    device/huawei/angler/init.qcom.devstart.sh:system/bin/init.qcom.devstart.sh
+    device/msft/talkman/init.talkman.rc:root/init.talkman.rc \
+    device/msft/talkman/init.talkman.usb.rc:root/init.talkman.usb.rc \
+    device/msft/talkman/fstab.talkman:root/fstab.talkman \
+    device/msft/talkman/ueventd.talkman.rc:root/ueventd.talkman.rc \
+    device/msft/talkman/init.recovery.talkman.rc:root/init.recovery.talkman.rc \
+    device/msft/talkman/init.talkman.power.sh:system/bin/init.talkman.power.sh \
+    device/msft/talkman/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
+    device/msft/talkman/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
+    device/msft/talkman/init.qcom.devwait.sh:system/bin/init.qcom.devwait.sh \
+    device/msft/talkman/init.qcom.devstart.sh:system/bin/init.qcom.devstart.sh
 
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.sensorhub.rc:root/init.angler.sensorhub.rc
+    device/msft/talkman/init.talkman.sensorhub.rc:root/init.talkman.sensorhub.rc
 else
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.nanohub.rc:root/init.angler.sensorhub.rc
+    device/msft/talkman/init.talkman.nanohub.rc:root/init.talkman.sensorhub.rc
 endif
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.mcfg.sh:system/bin/init.mcfg.sh
+    device/msft/talkman/init.mcfg.sh:system/bin/init.mcfg.sh
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.radio.sh:system/bin/init.radio.sh
+    device/msft/talkman/init.radio.sh:system/bin/init.radio.sh
 
 # Thermal configuration
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/thermal-engine-angler.conf:system/etc/thermal-engine.conf
+    device/msft/talkman/thermal-engine-angler.conf:system/etc/thermal-engine.conf
 
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    device/huawei/angler/media_codecs.xml:system/etc/media_codecs.xml \
-    device/huawei/angler/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    device/huawei/angler/media_profiles.xml:system/etc/media_profiles.xml
+    device/msft/talkman/media_codecs.xml:system/etc/media_codecs.xml \
+    device/msft/talkman/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    device/msft/talkman/media_profiles.xml:system/etc/media_profiles.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
-    device/huawei/angler/audio_effects.conf:system/etc/audio_effects_vendor.conf \
-    device/huawei/angler/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/huawei/angler/audio_platform_info_i2s.xml:system/etc/audio_platform_info_i2s.xml \
-    device/huawei/angler/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
-    device/huawei/angler/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
-    device/huawei/angler/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    device/huawei/angler/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    device/huawei/angler/audio_policy_volumes_drc.xml:system/etc/audio_policy_volumes_drc.xml \
+    device/msft/talkman/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
+    device/msft/talkman/audio_effects.conf:system/etc/audio_effects_vendor.conf \
+    device/msft/talkman/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/msft/talkman/audio_platform_info_i2s.xml:system/etc/audio_platform_info_i2s.xml \
+    device/msft/talkman/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
+    device/msft/talkman/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
+    device/msft/talkman/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    device/msft/talkman/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+    device/msft/talkman/audio_policy_volumes_drc.xml:system/etc/audio_policy_volumes_drc.xml \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
@@ -79,18 +79,13 @@ PRODUCT_COPY_FILES += \
 
 # Input device files
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/huawei/angler/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    device/huawei/angler/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc
+    device/msft/talkman/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/msft/talkman/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
+    device/msft/talkman/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc
 
 # for launcher layout
 #PRODUCT_PACKAGES += \
-#    AnglerLayout
-
-# Fingerprint Sensor
-PRODUCT_PACKAGES += \
-    fingerprint.angler \
-    android.hardware.biometrics.fingerprint@2.1-service
+#    TalkmanLayout
 
 # Delegation for OEM customization
 PRODUCT_OEM_PROPERTIES := \
@@ -103,15 +98,15 @@ PRODUCT_OEM_PROPERTIES := \
     oem.*
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+    device/msft/talkman/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/huawei/angler/bcmdhd-pme.cal:system/etc/wifi/bcmdhd-pme.cal \
-    device/huawei/angler/bcmdhd-high.cal:system/etc/wifi/bcmdhd-high.cal \
-    device/huawei/angler/bcmdhd-low.cal:system/etc/wifi/bcmdhd-low.cal \
-    device/huawei/angler/filter_ie:system/etc/wifi/filter_ie
+    device/msft/talkman/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+    device/msft/talkman/bcmdhd-pme.cal:system/etc/wifi/bcmdhd-pme.cal \
+    device/msft/talkman/bcmdhd-high.cal:system/etc/wifi/bcmdhd-high.cal \
+    device/msft/talkman/bcmdhd-low.cal:system/etc/wifi/bcmdhd-low.cal \
+    device/msft/talkman/filter_ie:system/etc/wifi/filter_ie
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -155,11 +150,11 @@ PRODUCT_COPY_FILES += \
 
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+    device/msft/talkman/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Qseecomd configuration file
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.qseecomd.sh:system/bin/init.angler.qseecomd.sh
+    device/msft/talkman/init.talkman.qseecomd.sh:system/bin/init.talkman.qseecomd.sh
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -186,7 +181,7 @@ PRODUCT_PACKAGES += \
 
 # Light HAL
 PRODUCT_PACKAGES += \
-    lights.angler \
+    lights.talkman \
     android.hardware.light@2.0-impl
 
 # RenderScript HAL
@@ -261,19 +256,15 @@ NANOHUB_SENSORHAL_SENSORLIST := $(LOCAL_PATH)/sensorhal/sensorlist.cpp
 NANOHUB_SENSORHAL_DIRECT_REPORT_ENABLED := true
 
 PRODUCT_PACKAGES += \
-    sensors.angler \
-    activity_recognition.angler \
+    sensors.talkman \
+    activity_recognition.talkman \
     context_hub.default \
     android.hardware.sensors@1.0-impl \
     android.hardware.contexthub@1.0-impl \
 
-# new gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
-
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
 PRODUCT_PACKAGES += \
-    sensortool.angler \
+    sensortool.talkman \
     nano4x1.bin
 else
 PRODUCT_PACKAGES += \
@@ -315,22 +306,18 @@ PRODUCT_PACKAGES += \
     nfc_nci.msm8994 \
     android.hardware.nfc@1.0-impl \
 
-# Keymaster HAL
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.angler \
+    power.talkman \
     android.hardware.power@1.0-impl \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
-    thermal.angler \
+    thermal.talkman \
     android.hardware.thermal@1.0-impl
 
 #GNSS HAL
@@ -349,11 +336,11 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
-    device/huawei/angler/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+    device/msft/talkman/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+    device/msft/talkman/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/huawei/angler/overlay
+    device/msft/talkman/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
@@ -433,9 +420,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
-   ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/frp
-
 # Request modem to send PLMN name always irrespective
 # of display condition in EFSPN.
 # RIL uses this property.
@@ -473,7 +457,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype="fluence" \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicecomm=true \
-    persist.audio.product.identify="angler" \
+    persist.audio.product.identify="talkman" \
     persist.audio.fluence.speaker=true
 
 # Default OMX service to non-Treble
@@ -518,29 +502,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter aosp_angler, $(TARGET_PRODUCT)))
+ifeq (,$(filter aosp_talkman, $(TARGET_PRODUCT)))
 PRODUCT_PACKAGES += \
     NexusLogger
-endif # aosp_angler
+endif # aosp_talkman
 
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.diag.rc.userdebug:root/init.angler.diag.rc
+    device/msft/talkman/init.talkman.diag.rc.userdebug:root/init.talkman.diag.rc
 
 # subsystem ramdump collection
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.ssr.enable_ramdumps=1
 else # userdebug eng
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/init.angler.diag.rc.user:root/init.angler.diag.rc
+    device/msft/talkman/init.talkman.diag.rc.user:root/init.talkman.diag.rc
 endif # userdebug eng
 
 # Incoming number (b/23529711)
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.redir_party_num=0
-
-# OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.oem_unlock_supported=1
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -568,11 +548,11 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/gps.conf:system/etc/gps.conf:qcom
+    device/msft/talkman/gps.conf:system/etc/gps.conf:qcom
 
 # only include verity on user builds for lineage
 ifeq ($(TARGET_BUILD_VARIANT),user)
-  PRODUCT_COPY_FILES += device/huawei/angler/fstab-verity.angler:root/fstab.angler
+  PRODUCT_COPY_FILES += device/msft/talkman/fstab-verity.talkman:root/fstab.talkman
 
   # setup dm-verity configs.
   PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system

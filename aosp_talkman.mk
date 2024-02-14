@@ -24,17 +24,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_angler
-PRODUCT_DEVICE := angler
+PRODUCT_NAME := aosp_talkman
+PRODUCT_DEVICE := talkman
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on angler
-PRODUCT_MANUFACTURER := Huawei
+PRODUCT_MODEL := AOSP on talkman
+PRODUCT_MANUFACTURER := Microsoft
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #PRODUCT_COPY_FILES += device/huawei/angler/fstab.aosp_angler:root/fstab.angler
 
-$(call inherit-product, device/huawei/angler/device.mk)
-$(call inherit-product-if-exists, vendor/huawei/angler/angler-vendor.mk)
+$(call inherit-product, device/msft/talkman/device.mk)
+$(call inherit-product-if-exists, vendor/msft/talkman/angler-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3 \

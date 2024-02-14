@@ -1,6 +1,6 @@
 [
  {
-   "repository": "android_kernel_huawei_angler",
-   "target_path": "kernel/huawei/angler"
+   "repository": "android_kernel_msft_talkman",
+   "target_path": "kernel/msft/talkman"
  }
 ]

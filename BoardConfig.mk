@@ -17,7 +17,7 @@
 BUILD_BROKEN_DUP_RULES := true
 
 TARGET_BOARD_PLATFORM := msm8994
-TARGET_BOOTLOADER_BOARD_NAME := angler
+TARGET_BOOTLOADER_BOARD_NAME := talkman
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -33,8 +33,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 
 # Inline kernel building
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := lineageos_angler_defconfig
+TARGET_KERNEL_SOURCE := kernel/msft/talkman
+TARGET_KERNEL_CONFIG := lumia_defconfig
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -47,7 +47,7 @@ BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
-BOARD_KERNEL_CMDLINE := androidboot.hardware=angler androidboot.console=ttyHSL0 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-3 no_console_suspend
+BOARD_KERNEL_CMDLINE := androidboot.hardware=talkman androidboot.console=ttyHSL0 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-3 no_console_suspend
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -61,7 +61,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/angler/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/msft/talkman/bluetooth
 
 BOARD_USES_SECURE_SERVICES := true
 
@@ -69,10 +69,10 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-TARGET_BOARD_INFO_FILE := device/huawei/angler/board-info.txt
+TARGET_BOARD_INFO_FILE := device/msft/talkman/board-info.txt
 TARGET_NO_RPC := true
 
-BOARD_EGL_CFG := device/huawei/angler/egl.cfg
+BOARD_EGL_CFG := device/msft/talkman/egl.cfg
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -124,15 +124,15 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 104857600
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_AUX_OS_VARIANT_LIST := angler
+TARGET_AUX_OS_VARIANT_LIST := talkman
 
-TARGET_RECOVERY_FSTAB = device/huawei/angler/fstab.angler
+TARGET_RECOVERY_FSTAB = device/msft/talkman/fstab.talkman
 # write vendor modules to system
 TARGET_COPY_OUT_VENDOR := system
-TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler
+TARGET_RELEASETOOLS_EXTENSIONS := device/msft/talkman
 
 BOARD_SEPOLICY_DIRS += \
-	device/huawei/angler/sepolicy
+	device/msft/talkman/sepolicy
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -168,9 +168,9 @@ NXP_CHIP_TYPE := 2
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/angler-setup.sh
 
-TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
+TARGET_FS_CONFIG_GEN += device/msft/talkman/config.fs
 
-DEVICE_MANIFEST_FILE := device/huawei/angler/manifest.xml
-DEVICE_MATRIX_FILE := device/huawei/angler/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/msft/talkman/manifest.xml
+DEVICE_MATRIX_FILE := device/msft/talkman/compatibility_matrix.xml
 
--include vendor/huawei/angler/BoardConfigVendor.mk
+-include vendor/msft/talkman/BoardConfigVendor.mk

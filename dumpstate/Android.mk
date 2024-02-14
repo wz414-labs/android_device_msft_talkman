@@ -15,8 +15,8 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.dumpstate@1.0-service.angler
-LOCAL_INIT_RC := android.hardware.dumpstate@1.0-service.angler.rc
+LOCAL_MODULE := android.hardware.dumpstate@1.0-service.talkman
+LOCAL_INIT_RC := android.hardware.dumpstate@1.0-service.talkman.rc
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SRC_FILES := \
     DumpstateDevice.cpp \

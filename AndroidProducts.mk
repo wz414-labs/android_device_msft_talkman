@@ -15,7 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_angler.mk
+    $(LOCAL_DIR)/aosp_talkman.mk \
+    $(LOCAL_DIR)/lineage.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_angler-userdebug
+    aosp_talkman-eng \
+    aosp_talkman-userdebug \
+    aosp_talkman-user \
+    lineage_talkman-eng \
+    lineage_talkman-userdebug \
+    lineage_talkman-user

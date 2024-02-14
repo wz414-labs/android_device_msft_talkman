@@ -10,7 +10,7 @@ LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_POST_INSTALL_CMD := \
-    test -s vendor/huawei/angler/proprietary/prebuilt/target/product/msm8994/system/etc/izat.conf || { \
+    test -s vendor/msft/talkman/proprietary/prebuilt/target/product/msm8994/system/etc/izat.conf || { \
     mkdir -p $(PRODUCT_OUT)/system/etc; \
     ln -sf /vendor/etc/izat.conf $(PRODUCT_OUT)/system/etc/izat.conf; \
     ln -sf /vendor/etc/flp.conf $(PRODUCT_OUT)/system/etc/flp.conf; \
@@ -30,4 +30,4 @@ LOCAL_POST_INSTALL_CMD := \
 
 include $(BUILD_PHONY_PACKAGE)
 
-#endif # aosp_angler
+#endif # aosp_talkman

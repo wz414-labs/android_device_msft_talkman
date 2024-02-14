@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := angler/BoardConfigPartial.mk
+LOCAL_STEM := talkman/BoardConfigPartial.mk
 
--include vendor/huawei/$(LOCAL_STEM)
+-include vendor/msft/$(LOCAL_STEM)

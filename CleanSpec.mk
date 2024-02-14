@@ -44,7 +44,7 @@
 #$(call add-clean-step, find $(OUT_DIR) -type f -name "IGTalkSession*" -print0 | xargs -0 rm -f)
 #$(call add-clean-step, rm -rf $(PRODUCT_OUT)/data/*)
 
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/angler/system/build.prop)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/talkman/system/build.prop)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/build.prop)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/ETC/system_build_prop_intermediates/build.prop)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/build.prop)

@@ -25,8 +25,8 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_SRC_FILES := lights.c
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SHARED_LIBRARIES := liblog
-LOCAL_CFLAGS := $(common_flags) -DLOG_TAG=\"anglerlights\"
-LOCAL_MODULE := lights.angler
+LOCAL_CFLAGS := $(common_flags) -DLOG_TAG=\"talkmanlights\"
+LOCAL_MODULE := lights.talkman
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
