@@ -10,7 +10,7 @@ $(call inherit-product, device/msft/talkman/aosp_talkman.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_talkman
-PRODUCT_BRAND := microsoft
+PRODUCT_BRAND := Microsoft
 PRODUCT_MODEL := Lumia 950
 
 TARGET_VENDOR := msft

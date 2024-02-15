@@ -16,7 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_talkman.mk \
-    $(LOCAL_DIR)/lineage.mk
+    $(LOCAL_DIR)/lineage_talkman.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_talkman-eng \
